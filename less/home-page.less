@@ -4,12 +4,14 @@
   .content-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @media @mobile {
-      display:flex;
       flex-direction:column;
       align-items: center;
+      width: 95%;
+      margin: 0 auto 30px;
+    
     }
 
     .header-img {
@@ -18,8 +20,14 @@
     }
    
     .welcome {
-      border-bottom: 2px dashed silver;
+      border-bottom: 2px dashed @silver;
       margin-bottom: 3%;
+
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto 30px;
+        padding-top: 3%;
+      }
 
       p{
         padding-bottom: 2%;
@@ -29,11 +37,22 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto 30px;
+        padding-top: 3%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+      
+      }
 
       img {
         border-radius: 10px;
@@ -45,6 +64,12 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
     
+    @media @mobile {
+      flex-direction: column-reverse;
+      width: 95%;
+      margin: 0 auto 30px;
+      padding-top: 3%;
+    }
     
 
     .text-content {
@@ -65,6 +90,11 @@
     margin: 0 auto 30px;
     padding-top: 3%;
 
+    @media @mobile {
+      width: 95%;
+      
+    }
+
     img {
       border-radius: 10px;
     }
@@ -80,14 +110,23 @@
       display:flex;
       flex-direction:column;
       align-items: center;
+      width: 90%;
+      margin: 0 auto 30px;
+      padding-top: 3%;
+      
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
-     
-
+      @media @mobile {
+        width: 90%;
+        margin: 0 auto 30px;
+        padding-top: 3%;
+        
+      }
+      
       .btn {
         color: white;
         background-color: #2D8080;
@@ -97,7 +136,12 @@
         margin-top: solid 1px;
         border-radius: 10px;
         text-align: center;
-        border: solid 1px silver;
+        border: solid 1px @silver;
+
+        @media @mobile {
+          background-color: @eastern-blue;
+          width: 100%;
+        }
       }
     }
   }
