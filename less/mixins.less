@@ -1,1 +1,29 @@
 // Mixins in here
+
+.margin-lefts(@margin)  {
+    margin-left: @margin;
+}
+
+.measurements() {
+    width: 95%;
+    margin: 0 auto 30px;
+    padding-top: 3;
+}
+
+.measurements-alt(@width) {
+    width: @width;
+    margin: 0 auto 30px;
+    padding-top: 3%;
+}
+
+.btns() {
+    color: white;
+    background-color: #2D8080;
+    font-size: 2rem;
+    width: 200px;
+    padding: 10px;
+    margin-top: solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px @silver;  
+}

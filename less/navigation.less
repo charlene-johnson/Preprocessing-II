@@ -1,33 +1,43 @@
 // Navigation Styles here
+
 header {
     border-bottom: 2px dashed @silver;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 2% 2% 0 2%;
 
-
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 0 30%;
-
+    @media @mobile {
+        flex-direction: column;
+        
+    }
+    
+    h1 {
+        .margin-lefts(10%);
+        
         @media @mobile {
-            justify-content: space-evenly;
+            .margin-lefts(32%);
         }
-        
+    }
+    nav {
+       display: flex;
+       margin-right: 9%;
+       
 
-        .fun-bus {
-            margin-right: 24%;
+       @media @mobile {
+           align-items: center;
+           .margin-lefts(15%);
+           
+       }
             
-            
-        
-        }
-        
+    
         a {
             text-decoration: none;
-            padding: 4%;
+            padding: 7%;
             font-size: 1.5rem;
             color: @shark;
-
-        }
+            
+        } 
     }
 }
